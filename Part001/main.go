@@ -27,7 +27,8 @@ func Reverse(nums []int) {
 }
 
 func RemoveElement(nums []int, index int) []int {
-	return append(nums[:index], nums[index+1:]...)
+	tmp := append(nums[:index], nums[index+1:]...)
+	return tmp
 }
 
 func main() {
@@ -49,8 +50,7 @@ func main() {
 
 	//4
 	d := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	fmt.Printf("Before : %v \n", d)
-	e := RemoveElement(d, 5)
-	fmt.Printf("After  : %v \n", e)
-
+	fmt.Printf("Before slice d: %v \n", d)
+	e := RemoveElement(d, 3)
+	fmt.Printf(" After slice e: %v \n", e)
 }
