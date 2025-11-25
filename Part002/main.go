@@ -40,7 +40,7 @@ func main() {
 
 	//2
 	slice1 := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	newSlice1 := Chunk(slice1, 4)
+	newSlice1 := Chunk(slice1, 3)
 	fmt.Println("Original Slice:", slice1)
 	fmt.Println("New Slice:     ", newSlice1)
 }
