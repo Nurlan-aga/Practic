@@ -65,7 +65,6 @@ type User struct {
 func GroupByCity(users []User) map[string][]User {
 	result := make(map[string][]User)
 	for i := 0; i < len(users); i++ {
-		fmt.Println(users[i])
 		result[users[i].City] = append(result[users[i].City], users[i])
 	}
 	return result
